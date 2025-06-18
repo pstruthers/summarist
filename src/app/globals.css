@@ -1,5 +1,39 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply max-w-full overflow-x-hidden leading-tight;
+  }
+
+  a {
+    @apply no-underline text-inherit;
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  button {
+    @apply cursor-pointer outline-none border-none bg-transparent;
+  }
+
+  button:active {
+    @apply translate-y-[1px];
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed opacity-65;
+  }
+}
+
 body {
   font-family: Roboto, sans-serif;
 }

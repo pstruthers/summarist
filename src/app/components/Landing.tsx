@@ -1,7 +1,7 @@
 export default function Landing() {
   return (
     <div className="py-10 w-full">
-      <div className="max-w-[1070px] w-full m-auto px-6">
+      <div className="max-w-[1070px] w-full mx-auto px-6">
         <div className="flex">
           <div className="w-full">
             <div className="text-[#032b41] text-[40px] font-bold mb-6">
